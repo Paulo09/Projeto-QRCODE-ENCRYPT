@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">I am using a string resource!!! randair</string>
+    <string name="app_name">DETRAN-AL</string>
+    <string name="icon_scan">Scan</string>
+    <string name="pmname">DETRAN-AL</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_del">Acionar Câmera</string>
+    <string name="btn_selall">Select All</string>
+    <string name="btn_unselall">Unselect all</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_back">Back</string>
+    <string name="btn_exit">Exit</string>
+    <string name="btn_menu">Menu</string>
+    <string name="btn_save">Save</string>
+    <string name="txt_enterhexkey">Enter Hexadecimal Key</string>
+    <string name="icon_advsettings">Settings</string>
+    <string name="icon_update">Updates</string>
+    <string name="icon_hist">History</string>
+    <string name="icon_help">Help</string>
+    <string name="icon_info">About</string>
+</resources>

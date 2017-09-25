@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@drawable/background_common" 
+  android:orientation="vertical">
+	<LinearLayout 	android:id="@+id/ll_header" 
+	   				android:layout_height="wrap_content" 
+	   				android:layout_width="fill_parent" 
+	   				android:layout_gravity="center_horizontal">
+	       	<ImageView 	android:id="@+id/ivpmlogo" 
+	       				android:layout_height="wrap_content" 
+	       				android:layout_gravity="center" 
+	       				android:layout_width="fill_parent" 
+	       				android:paddingTop="5dip"
+	       				android:src="@drawable/detranalagoas"/>
+	</LinearLayout>
+
+	<ScrollView android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1"
+    			android:fadeScrollbars="true">
+		<LinearLayout 	android:id="@+id/llayout_peltaconfigaddkey" 
+	    				android:layout_width="fill_parent" 
+	    				android:layout_height="wrap_content"
+	    				android:scrollbars="vertical" android:orientation="vertical">
+	        <TextView 	android:id="@+id/tv_url_peltaconfig" 
+	        			android:layout_height="wrap_content" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginTop="5dip" 
+	        			android:textColor="@color/black" 
+	        			android:text="Encryption Key"/>
+	        <EditText 	android:layout_height="wrap_content"
+	        			android:maxLines="1"
+	        			android:lines="1"
+	        			android:layout_width="fill_parent" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginRight="10dip" 
+	        			android:longClickable="false" 
+	        			android:gravity="center" android:id="@+id/edittxt_url_peltaconfigdialog" android:digits="0123456789abcdefABCDEF"/>
+	       	<LinearLayout 	android:id="@+id/llayout_getkey"
+		        			android:layout_height="wrap_content" 
+		        			android:layout_width="fill_parent" android:orientation="vertical">
+	       		<Button android:layout_height="wrap_content" android:id="@+id/btn_peltaconfigdialogsave" android:text="  Save  " android:layout_width="fill_parent"></Button>
+					
+	        </LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

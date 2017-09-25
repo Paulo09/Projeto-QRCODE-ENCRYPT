@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" 
+  android:background="@drawable/background_common" 
+  android:orientation="vertical">
+	<LinearLayout 	android:id="@+id/ll_header" 
+	   				android:layout_height="wrap_content" 
+	   				android:layout_width="fill_parent" 
+	   				android:layout_gravity="center_horizontal">
+	       	<ImageView 	android:id="@+id/ivpmlogo" 
+	       				android:layout_height="wrap_content" 
+	       				android:layout_gravity="center" 
+	       				android:layout_width="fill_parent" 
+	       				android:paddingTop="5dip"
+	       				android:src="@drawable/detranalagoas"/>
+	</LinearLayout>
+        <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:background="@color/black_transparent">
+	        <LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout3" android:gravity="center" android:layout_height="wrap_content" android:layout_centerInParent="true" android:orientation="horizontal">
+	            <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:textColor="@color/black" android:layout_gravity="center_vertical|center" android:gravity="center_vertical" android:drawablePadding="2dip" android:textSize="14px" android:text="Settings" android:drawableLeft="@drawable/smallicon_advsettings"></TextView>
+	        </LinearLayout>
+    	</RelativeLayout>
+
+	<ScrollView android:id="@+id/scroll" 
+				android:layout_width="fill_parent"
+    			android:layout_height="wrap_content"
+    			android:layout_weight="1"
+    			android:fadeScrollbars="true">
+		<LinearLayout 	android:id="@+id/llayout_peltaconfig" 
+	    				android:layout_width="fill_parent" 
+	    				android:layout_height="wrap_content"
+	    				android:scrollbars="vertical" 
+	    				android:orientation="vertical">
+			<LinearLayout 	android:id="@+id/llayout_getkey"
+			 			android:layout_height="wrap_content" 
+			 			android:layout_width="fill_parent"
+			 			android:orientation="horizontal">
+				        <TextView 	android:layout_height="wrap_content" 
+				        			android:layout_width="wrap_content" 
+				        			android:layout_marginLeft="10dip" 
+				        			android:layout_marginTop="5dip" 
+				        			android:id="@+id/tv_enckeypresent" 
+				        			android:textSize="18dip" 
+				        			android:text="Encryption Key Present" 
+				        			android:textColor="@color/green"/>
+	        </LinearLayout>
+	        <TextView 	android:id="@+id/tv_url_peltaconfig" 
+	        			android:layout_height="wrap_content" 
+	        			android:layout_width="wrap_content" 
+	        			android:text="URL" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginTop="5dip" 
+	        			android:textColor="@color/black"/>
+	        <EditText 	android:layout_height="wrap_content"
+	        			android:id="@+id/edittxt_url_peltaconfig" 
+	        			android:maxLines="1"
+	        			android:lines="1"
+	        			android:layout_width="fill_parent" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginRight="10dip" 
+	        			android:longClickable="false" 
+	        			android:gravity="center"/>
+	        <TextView 	android:id="@+id/tv_password_peltaconfig" 
+	        			android:layout_height="wrap_content" 
+	        			android:layout_width="wrap_content" 
+	        			android:text="Password" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginTop="5dip" 
+	        			android:textColor="@color/black"/>
+	        <EditText 	android:layout_height="wrap_content"
+	        			android:id="@+id/edittxt_password_peltaconfig" 
+	        			android:maxLines="1"
+	        			android:lines="1"
+	        			android:layout_width="fill_parent" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginRight="10dip" 
+	        			android:longClickable="false" 
+	        			android:password="true"
+	        			android:gravity="center"/>
+	       	<LinearLayout 	android:id="@+id/llayout_getkey"
+		        			android:layout_height="wrap_content" 
+		        			android:layout_width="fill_parent"
+		        			android:orientation="horizontal">
+	        		<Button android:layout_height="wrap_content" 
+	        				android:layout_width="wrap_content" 
+	        				android:text="Download Key" 
+	        				android:id="@+id/btn_getenckey"
+	        				android:layout_marginLeft="10dip" 
+							android:layout_marginTop="0dip"/>
+	        		<Button android:layout_height="wrap_content" 
+	        				android:layout_width="wrap_content" 
+	        				android:text="Enter Key Manually" 
+	        				android:id="@+id/btn_entrenckeymanually"
+	        				android:layout_marginLeft="10dip" 
+							android:layout_marginTop="0dip"/>
+					<ProgressBar 
+							android:id="@+id/pb_getenckey"
+							android:layout_width="wrap_content" 
+							android:layout_height="wrap_content"
+							android:visibility="invisible"/>
+	        </LinearLayout>
+	        <TextView 	android:id="@+id/tv_readcovert_peltaconfig" 
+	        			android:layout_height="wrap_content" 
+	        			android:layout_width="wrap_content" 
+	        			android:text="Read Covert" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginTop="5dip" 
+	        			android:textColor="@color/black"/>
+	        <CheckBox 	android:id="@+id/cb_readcovert_peltaconfig" 
+	        			android:layout_height="wrap_content" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginTop="0dip"/>        
+			<TextView 	android:id="@+id/tv_readcovert_peltaconfig" 
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content" 
+						android:text="On Successful Read" 
+						android:layout_marginLeft="10dip" 
+						android:layout_marginTop="5dip" 
+						android:textColor="@color/black"/>
+	       <LinearLayout android:id="@+id/llayout_onread"
+	        			android:layout_height="wrap_content" 
+	        			android:layout_width="fill_parent"
+	        			android:orientation="horizontal">
+				<CheckBox 	android:id="@+id/cb_soundonread_peltaconfig" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content" 
+							android:text="Play Sound"
+							android:textColor="@color/black"
+							android:textSize="10px"
+							android:layout_marginLeft="10dip" 
+							android:layout_marginTop="0dip"/>
+	
+				<CheckBox 	android:id="@+id/cb_vibrateonread_peltaconfig" 
+							android:layout_height="wrap_content" 
+							android:layout_width="wrap_content" 
+							android:text="Vibrate" 
+							android:textColor="@color/black"
+							android:textSize="10px"
+							android:layout_marginLeft="20dip" 
+							android:layout_marginTop="0dip"/>
+	        </LinearLayout>
+	        <TextView 	android:id="@+id/tv_followurl_peltaconfig" 
+						android:layout_height="wrap_content" 
+						android:layout_width="wrap_content" 
+						android:text="Follow URL on click" 
+						android:layout_marginLeft="10dip" 
+						android:layout_marginTop="5dip" 
+						android:textColor="@color/black"/>
+			<CheckBox 	android:id="@+id/cb_followurl_peltaconfig" 
+	        			android:layout_height="wrap_content" 
+	        			android:layout_width="wrap_content" 
+	        			android:layout_marginLeft="10dip" 
+	        			android:layout_marginTop="0dip"
+	        			android:enabled="false" />
+		</LinearLayout>
+	</ScrollView>
+	<LinearLayout android:id="@+id/llayout_showres_btn" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"
+				android:orientation="horizontal">
+
+		  		<Button android:id="@+id/btn_save_peltaconfig"
+		  				android:text="Save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="top"/>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout 	xmlns:android="http://schemas.android.com/apk/res/android" 
+				    android:background="@drawable/background_common"
+				    android:layout_width="fill_parent" 
+				    android:layout_height="fill_parent" 
+				    android:id="@+id/linearLayout1" 
+				    android:layout_gravity="bottom" 
+				    android:orientation="vertical">
+	<LinearLayout 	android:id="@+id/ll_header" 
+	   				android:layout_height="wrap_content" 
+	   				android:layout_width="fill_parent" 
+	   				android:layout_gravity="center_horizontal">
+	       	<ImageView 	android:id="@+id/ivpmlogo" 
+	       				android:paddingTop="5dip"
+	       				android:layout_height="wrap_content" 
+	       				android:layout_gravity="center" 
+	       				android:layout_width="fill_parent" 
+	       				android:src="@drawable/detranalagoas"/>
+	</LinearLayout>
+		<TableLayout 
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent" 
+		    android:layout_weight="1">
+		    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+		        <ImageButton android:layout_marginTop="15dip" android:layout_weight="1" android:background="@color/transparent" android:layout_marginLeft="20dip" android:id="@+id/imgbtn_scan" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/imgbtn_icon_scan"></ImageButton>
+		        <ImageButton android:layout_width="wrap_content" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:layout_height="wrap_content" android:layout_marginTop="15dip" android:layout_weight="1" android:src="@drawable/imgbtn_icon_advsettings" android:id="@+id/imgbtn_pelta" android:background="@color/transparent"></ImageButton>
+		        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginTop="15dip" android:layout_marginRight="20dip" android:src="@drawable/imgbtn_icon_update" android:id="@+id/imgbtn_updates" android:background="@color/transparent"></ImageButton>
+		    </TableRow>
+		    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+		        <TextView android:id="@+id/tv_icon_scan" android:layout_weight="1" android:background="@color/transparent" android:layout_marginLeft="20dip" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="@string/icon_scan" android:layout_gravity="center_horizontal" android:textColor="@color/black"/>
+		        <TextView android:id="@+id/tv_icon_advsettings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@color/transparent" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:text="@string/icon_advsettings" android:layout_gravity="center_horizontal" android:textColor="@color/black"/>
+		        <TextView android:id="@+id/tv_icon_update" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:background="@color/transparent" android:layout_marginRight="20dip" android:text="@string/icon_update" android:layout_gravity="center_horizontal" android:textColor="@color/black"/>
+
+		    </TableRow>
+		    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+		        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dip" android:layout_weight="1" android:layout_marginLeft="20dip" android:src="@drawable/imgbtn_icon_history" android:id="@+id/imgbtn_history" android:background="@color/transparent"></ImageButton>
+		        <ImageButton android:layout_width="wrap_content" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:layout_height="wrap_content" android:layout_marginTop="10dip" android:layout_weight="1" android:src="@drawable/imgbtn_icon_help" android:id="@+id/imgbtn_help" android:background="@color/transparent"></ImageButton>
+		        <ImageButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:src="@drawable/imgbtn_icon_info" android:id="@+id/imgbtn_about" android:background="@color/transparent" android:layout_marginRight="20dip" android:layout_marginTop="10dip"></ImageButton>
+		    </TableRow>
+		    <TableRow android:layout_width="wrap_content" android:layout_height="wrap_content">
+		        <TextView android:id="@+id/tv_icon_hist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/icon_hist" android:layout_marginLeft="20dip" android:textColor="@color/black" android:layout_gravity="center"/>
+		        <TextView android:id="@+id/tv_icon_help" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/icon_help" android:background="@color/transparent" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:textColor="@color/black" android:layout_gravity="center"/>
+		        <TextView android:id="@+id/tv_icon_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/icon_info" android:layout_weight="1" android:background="@color/transparent" android:layout_marginRight="20dip" android:textColor="@color/black" android:layout_gravity="center"/>
+		    </TableRow>
+		</TableLayout>
+    </LinearLayout>

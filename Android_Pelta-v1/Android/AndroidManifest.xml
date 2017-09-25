@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.pagemark.peltareader"
+      android:versionCode="1" android:versionName="1.2.0 2013-02-04-2260">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <application android:label="@string/app_name" android:icon="@drawable/bc_icon">
+        <activity android:screenOrientation="landscape"
+      android:configChanges="keyboardHidden|orientation"
+                  android:label="@string/app_name" android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+   <activity android:screenOrientation="landscape"
+   android:configChanges="keyboardHidden|orientation"
+                  android:label="@string/app_name" 
+                  android:name=".SurfaceOverlay"
+                  android:launchMode="singleTask">
+
+        </activity>
+   <activity android:screenOrientation="landscape"
+   android:configChanges="keyboardHidden|orientation"
+                  android:label="@string/app_name" android:name=".OnTopCanvas">
+        </activity>
+   
+   <activity android:screenOrientation="landscape"
+   android:configChanges="keyboardHidden|orientation"
+                  android:label="@string/app_name" android:name=".DrawOnTop">
+        </activity>
+
+   <activity android:screenOrientation="portrait"
+   android:configChanges="keyboardHidden|orientation"
+                  android:label="@string/app_name" android:name=".Prv">
+        </activity>
+
+   <activity android:screenOrientation="landscape"
+   			android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" android:name=".PreviewTransit">
+	</activity>
+	
+   <activity android:screenOrientation="landscape"
+   			android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name" android:name=".CamStandby">
+	</activity>
+	
+   <activity android:screenOrientation="landscape"
+   android:configChanges="keyboardHidden|orientation"
+                  android:label="@string/app_name" android:name=".ShowResults">
+        </activity>
+
+   <activity android:screenOrientation="landscape"
+   android:configChanges="keyboardHidden|orientation"
+                  android:label="@string/app_name" android:name=".Settings">
+        </activity>
+    
+   	<activity 	android:screenOrientation="landscape"
+   				android:configChanges="keyboardHidden|orientation"
+            	android:label="@string/app_name" android:name="History">
+        </activity>
+
+   	<activity 	android:screenOrientation="landscape"
+   				android:configChanges="keyboardHidden|orientation"
+            	android:label="@string/app_name" android:name=".About">
+        </activity>
+    
+   	<activity 	android:screenOrientation="landscape"
+   				android:configChanges="keyboardHidden|orientation"
+            	android:label="@string/app_name" android:name=".PeltaConfig">
+        </activity>
+    
+   	<activity 	android:screenOrientation="landscape"
+   				android:configChanges="keyboardHidden|orientation"
+            	android:label="@string/app_name" android:name=".Help">
+        </activity>
+
+   	<activity 	android:screenOrientation="landscape"
+   				android:configChanges="keyboardHidden|orientation"
+            	android:label="@string/app_name" android:name="Updates">
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.VIBRATE"/>
+</manifest>

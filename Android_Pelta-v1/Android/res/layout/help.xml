@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/linearLayout1" 
+			xmlns:android="http://schemas.android.com/apk/res/android" 
+			android:layout_width="fill_parent" 
+			android:background="@drawable/background_common" android:orientation="vertical" android:layout_height="wrap_content">
+    <LinearLayout android:id="@+id/ll_header" android:layout_width="fill_parent" android:layout_gravity="center_horizontal" android:layout_height="wrap_content">
+        <ImageView android:src="@drawable/pm_logo" android:layout_width="fill_parent" android:paddingTop="5dip" android:layout_gravity="center" android:layout_height="wrap_content" android:id="@+id/ivpmlogo"></ImageView>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5dip" android:background="@color/black_transparent">
+        <LinearLayout android:layout_width="wrap_content" android:id="@+id/linearLayout3" android:gravity="center" android:layout_height="wrap_content" android:layout_centerInParent="true" android:orientation="horizontal">
+            <TextView android:layout_height="wrap_content" android:id="@+id/textView1" android:layout_width="wrap_content" android:textColor="@color/black" android:layout_gravity="center_vertical|center" android:text="Help" android:gravity="center_vertical" android:drawablePadding="2dip" android:drawableLeft="@drawable/smallicon_help" android:textSize="14px"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+			<FrameLayout  android:id="@+id/frameLayout1" 
+						android:layout_width="fill_parent" 
+						android:layout_height="wrap_content" 
+	   					android:gravity="center" 
+						android:layout_weight="1" android:layout_gravity="center">
+					 
+				   		<TextView 	android:text="Usage instructions come here" 
+			   					android:id="@+id/txt_help" 
+			   					android:textColor="@color/black" 
+			   					android:textSize="18dip" 
+			   					android:scrollbars="vertical" 
+			   					android:layout_height="wrap_content" 
+			   					android:layout_width="fill_parent" 
+			   					android:gravity="center" 
+			   					android:layout_gravity="center_vertical" 
+			   					android:layout_marginLeft="10dip" 
+			   					android:layout_marginRight="10dip"/>
+			</FrameLayout>
+</LinearLayout>
